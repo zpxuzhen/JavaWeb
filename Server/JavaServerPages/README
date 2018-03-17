@@ -1,0 +1,8 @@
+JSP:本质是servlet还是单例
+1.	jsp运行在服务器
+2.	jsp(java server page) 
+3.	jsp的基础是servlet(相当于对servlet进行一个包装)
+4.	jsp是综合技术 jsp=html+css+javascript+java代码+jsp标签(servlet)
+5.	jsp无需配置.直接使用,如果你修改了jsp文件，不需要重新reload web应用.
+
+只是把一些复杂的代码简化成标签了.

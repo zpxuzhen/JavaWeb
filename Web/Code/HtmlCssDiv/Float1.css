@@ -1,0 +1,21 @@
+@CHARSET "UTF-8";
+body{
+	border:1px solid silver;
+	width: 800px;
+	height:1000px;
+	margin:0 auto;
+}
+.div1{
+	border:1px solid blue;
+	background-color: pink;
+	width:150px;
+	height:100px;
+	margin-top: 10px;
+	margin-left: 10px;
+	/*左浮动，让该元素尽量向左面移动，直到碰到他的父元素的左边界*/
+	float: left;
+}
+#div2{
+	/*右浮动，让该元素尽量向右面移动，直到碰到他的父元素的右边界*/
+	float: right;
+}

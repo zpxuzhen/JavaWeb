@@ -1,0 +1,75 @@
+Servlet:
+用Java编写的服务器端程序,主要功能在于交互式地浏览和修改数据,生成动态Web内容.
+
+servlet的生命周期
+1.加载2.实例化3.初始化4.处理请求5.退出服务
+
+开发servlet有三种方法 
+(1)	实现 Servlet接口
+(2)	通过继承 GenericServlet
+(3)	通过继承 HttpServlet (推荐)
+
+小结 get 提交 和 post的提交的区别
+(1)	安全 post>get 因为get 会把提交的信息显示到地址栏
+(2)	内容 post>get get一般不要大于2k,post理论上无限制,但是在实际开发中,建议不要大于64k
+(3)	速度 get>post
+(4)	get可以保留uri中的参数,利于收藏
+
+
+<ServletTest1>
+Servlet在web.xml文件中映射
+(1)	一个已经注册的Servlet可以被多次映射
+(2)	当映射一个servlet时候，可以多层
+(3)	使用通配符在servlet映射到URL中有两种格式
+(4)	Servlet单例问题
+(5)	servlet 中的 <load-on-startup> 配置
+ServletConfig对象读取 servlet的配置信息
+myeclipse中如何修改Servlet模板  http://jingyan.baidu.com/article/0eb457e536d5a503f1a90593.html
+
+<ServletTest2>
+防盗链  RequestTest
+定时刷新  MyServlet1  跳转到  MyServlet2
+文件下载  MyServlet3  
+浏览器缓存 MyServlet4
+getWriter()和getOutputStream()不能同时使用
+
+<ServletTest3>
+用户注册MyInfoForm到RegisterCl
+获取http消息 GetRequestHeader和GetInfoServlet
+用户登录界面Login到Servlet1跳转到Servlet2 (request传递字符串)
+
+<Encoding>中文乱码
+post和get和sendRedirect
+
+<Session>
+(1)session存在服务器的内存中
+(2)一个用户浏览器,独享一个session域对象
+(3)session中的属性的默认生命周期是30min ，你可以通过 web.xml来修改(3种方式修改)
+(4)session中可以存放多个属性
+(5)session 可以存放对象
+(6)如果 session.setAttribute(“name”,val) , 如果名字重复，则会替换该属性.
+例子:Session1放入Session2取出  Session3放入并把Jsessionid保存到Cookie中
+验证码:com.hsp.myCheckCode
+
+<Cookie>生命周期是会话级别
+保存上次登录时间:com.hsp.LoginTime
+创建CreateCookie1读取ReadCookie1
+PS：MD5_test 加密保存到数据库
+
+<ServletContext>共享
+在服务器,被所有客户端共享,当web应用启动的时候，自动创建
+Servlet1 添加 删除 Servlet2 获取 
+Servlet3 获取context-param配置中的信息
+Servlet4 读取文件，和获取文件全路径
+Login  LoginCl  Manager  访问人数计数(防止用户不登录 假访问)  
+InitServlet 访问量保存到文件里,读取访问量 
+
+<myCart>购物车
+ArrayList方式
+HashMap方式 以及 DisableCookie 禁用Cookie使用Session
+没有做防止假访问
+
+<UsersManager>
+
+
+

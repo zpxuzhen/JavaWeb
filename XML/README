@@ -1,0 +1,22 @@
+<1>DTD用来约束XML:
+根元素 DOCTYPE 内部/外部
+元素 ELEMENT  (关注出现次数)
+属性  <!ATTLIST 元素名称 属性名称 属性类型 默认值>
+实体 ENTITY 内部/外部实体
+PCDATA  是会被解析器解析的文本。这些文本将被解析器检查实体以及标记。
+CDATA  是不会被解析器解析的文本。在这些文本中的标签不会被当作标记来对待，其中的实体也不会被展开。
+验证:通过XML解析器验证XML
+
+<2>Java对xml操作:
+(1)有三套api分为dom/sax/dom4j  分别演示crud操作
+为什么会出现sax技术(sax技术不能增加、删除、修改，只能查询)
+因为dom技术,会把整个xml文件加载到内存中,这样如果xml过大,则可能会出现内存溢出
+jvm启动内存可以修改
+(2)dom4j需要dom4j库 	xpath需要jaxen库
+dom4j:既可以提高效率,同时也可以进行crud
+xpath可以更加灵活的读取xml,随心所欲.
+
+<3>JavaScript对xml操作:
+
+
+

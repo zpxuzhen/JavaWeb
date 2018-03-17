@@ -1,0 +1,136 @@
+/*先用级别比较低的类选择器*/
+.top{
+	width: 780px;
+	height: 202px;
+}
+
+/*中间的左部*/
+.user_mid_left{
+	width: 215px;
+	float: left; /*必须加上左浮动*/
+}
+
+/*广告信息头*/
+.ad_info_title,.ad_info_search{
+	width: 215px;
+	height: 30px;
+	background-color: #EDEDED;
+	float: left; /*必须加上左浮动*/
+	border-top: 1px dotted gray; /*边框虚线*/
+	border-bottom: 1px dotted gray; /*边框虚线*/
+}
+.ad_info_title span,.ad_info_search span{
+	margin-left: 5px;
+	margin-top: 5px;
+	display: block;/*有时，为了让span能够响应margin-top则需要转为块元素显示*/
+}
+/*广告信息列表*/
+.ad_info_list{
+	width: 215px;
+	height: 230px;
+	background-color: #FEFEF6;
+	float: left; /*必须加上左浮动*/
+	line-height: 20px;
+}
+.ad_info_list ul{
+	padding-left: 0px;
+}
+.ad_info_list li{
+	list-style-type: none;
+	margin-left: 10px;
+}
+/*信息检索表单*/
+.info_search{
+	width: 215px;
+	height: 110px;
+	background-image: url("../images/query.gif");
+	float: left; /*必须加上左浮动*/
+}
+.info_search table{
+	margin-left: 5px;
+}
+/*联系我们具体信息*/
+.contact_info{
+	width: 215px;
+	height: 174px;
+	background-color: #FEFEF6;
+	float: left;/*必须加上左浮动*/
+}
+.contact_info span{
+	margin-top: 10px;
+	margin-left: 25px;
+	display: block;
+	line-height: 20px;
+}
+.contact_info span img{
+	width: 150px;
+}
+
+/*中间的右部*/
+.user_mid_right{
+	width: 563px;
+	float: right; /*右浮动*/
+}
+/*付费、免费专区图*/
+.pay_title,.free_title{
+	width: 563px;
+	height: 27px;
+	float: left;/*必须加上左浮动*/
+	margin-bottom: 15px;
+}
+.pay_title{
+	background-image: url("../images/fufei.gif");
+}
+.free_title{
+	background-image: url("../images/mianfei.gif");
+}
+
+/*付费、免费专区*/
+.pay_info_con,.free_info_con{
+	width: 563px;
+	background-color: white;
+	float: left;/*必须加上左浮动*/
+}
+.pay_info_con{
+	height: 100px;
+}
+.free_info_con{
+	height: 300px;
+}
+.pay_info_con table,.free_info_con table{
+	width: 550px;
+	margin: 0 auto;
+	border-collapse: collapse;
+	line-height: 20px;
+}
+.pay_info_con td,.free_info_con td{
+}
+
+/*首页的广告*/
+.ad_con{
+	width: 563px;
+	height: 87px;
+	background-color: white;
+	float: left; /*必须加上左浮动*/
+}
+.ad_con img{
+	width: 560px;
+	height: 87px;
+	float: right; /*右浮动*/
+}
+.pagenavi{
+	margin-right:30px;
+	float: right; /*右浮动*/
+}
+/*首页面的尾部*/
+.user_bottom{
+	width:780px;
+	height:57px;
+	float: left; /*必须加上左浮动*/
+	background-image: url("../images/bottom_bg.gif");
+}
+.user_bottom span{
+	display: block;
+	margin-top: 20px;
+	margin-left: 200px;
+}

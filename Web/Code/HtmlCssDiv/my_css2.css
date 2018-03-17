@@ -1,0 +1,9 @@
+@CHARSET "UTF-8";
+
+.s1{
+	background-color: pink;
+}
+.s2{
+	background-color: red;
+	width: 100px;
+}

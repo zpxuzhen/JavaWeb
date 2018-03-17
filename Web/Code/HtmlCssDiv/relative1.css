@@ -1,0 +1,32 @@
+@CHARSET "UTF-8";
+body{
+	border:1px solid silver;
+	width: 800px;
+	height:1000px;
+	margin:0 auto;
+}
+.div1{
+	border:1px solid blue;
+	background-color: pink;
+	width:150px;
+	height:100px;
+	margin-top: 10px;
+	margin-left: 10px;
+	/*左浮动，让该元素尽量向左面移动，直到碰到他的父元素的左边界*/
+	float: left;
+}
+#special1{
+	position: relative;/*相对定位*//*后面的不补充*/
+	left: 160px;/*在原来的位置向右移动大小*//*向左移动就是负数*/
+	top:150px;/*在原来的位置向下移动大小*//*向上移动就是负数*/
+}
+#special2{
+	position: absolute;/*绝对定位*//*后面的补充上来*/
+	left: 160px;/*相对离自己最近的那个非标准流盒子的位置向右移动大小*/
+	top:150px;/*相对离自己最近的那个非标准流盒子的位置向下移动大小*/
+}
+#special3{
+	position: fixed;/*fixed定位*//*很像绝对定位*/
+	left: 160px;/*相对body的位置向右移动大小*/
+	top:150px;/*相对body的位置向下移动大小*/
+}

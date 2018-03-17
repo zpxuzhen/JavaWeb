@@ -1,0 +1,40 @@
+AJAX 教程
+AJAX = Asynchronous JavaScript and XML（异步的 JavaScript 和 XML）。
+AJAX 不是新的编程语言，而是一种使用现有标准的新方法。
+AJAX 是与服务器交换数据并更新部分网页的艺术，在不重新加载整个页面的情况下。
+AJAX的工作原理相当于在用户和服务器之间加了—个中间层(AJAX引擎)，使用户操作与服务器响应异步化。
+避免得到的是缓存结果:向URL添加一个唯一的ID
+请求:注意是get还是post,get参数直接写在url里面,
+post需要用setRequestHeader添加http头,使用send发送参数.
+回调函数:是一种以参数形式传递给另一个函数的函数。
+如果您的网站上存在多个 AJAX 任务,
+那么您应该为创建 XMLHttpRequest 对象编写一个标准的函数,
+并为每个 AJAX 任务调用该函数。
+
+
+jQuery教程
+通过 jQuery，您可以选取（查询，query） HTML 元素，并对它们执行"操作"（actions）。
+基础语法： $(selector).action()  通过jQuery选择器选择对象,执行action事件
+
+什么是 jQuery ？
+jQuery是一个JavaScript函数库。
+jQuery是一个轻量级的"写的少，做的多"的JavaScript库。
+jQuery库包含以下功能：
+HTML 元素选取
+HTML 元素操作
+CSS 操作
+HTML 事件函数
+JavaScript 特效和动画
+HTML DOM 遍历和修改
+AJAX
+Utilities
+提示： 除此之外，Jquery还提供了大量的插件。
+
+遍历是为了更好的选择对象.
+
+
+jQuery+AJAX使用办法:
+只有load获取   get/post提交,还有其他的一些函数.
+操作上更简单了.
+
+

@@ -1,0 +1,88 @@
+--用户表
+create table users
+(
+user_id number primary key,
+user_name varchar2(50) not null,
+user_pwd varchar2(50) not null,
+user_email varchar2(100) not null,
+user_tel varchar2(20) not null,
+user_grade number(2) default 1 not null
+);
+--序列
+create sequence users_seq 
+start with 1
+increment by 1
+minvalue 1
+nomaxvalue 
+nocycle
+nocache
+;
+--测试数据
+insert into users values(users_seq.nextval,'daming','daming','xxx@qq.com','123456789',1);
+insert into users values(users_seq.nextval,'xiaoming','xiaoming','ccc@qq.com','987654321',1);
+--商品表
+create table books
+(
+book_id number primary key,
+book_name varchar2(50) not null,
+book_author varchar2(100) not null,
+book_press varchar2(100) not null,
+book_price number not null,
+book_stock number default 1000 not null
+);
+--序列
+create sequence books_seq 
+start with 1
+increment by 1
+minvalue 1
+nomaxvalue 
+nocycle
+nocache
+;
+--测试数据
+insert into books values(books_seq.nextval,'jsp应用开发详解','刘晓华','电子工业出版社',59,1000);
+insert into books values(books_seq.nextval,'Java Web服务开发','清华','清华大学出版社',68,1000);
+insert into books values(books_seq.nextval,'Java编程思想','陈昊鹏','机械工业出版社',86.40,1000);
+insert into books values(books_seq.nextval,'jsp编程指南','黎文译','电子工业出版社',85,1000);
+insert into books values(books_seq.nextval,'J2EE应用开发详解','罗玉玲','电子工业出版社',55,1000);
+insert into books values(books_seq.nextval,'J2EE企业级应用开发','刘晓华','电子工业出版社',59,1000);
+insert into books values(books_seq.nextval,'J2EE技术参考手册','飞思科技','电子工业出版社',49,1000);
+--订单表
+create table orders
+(
+order_id number primary key,
+user_id number references users(user_id),
+totalPrice number default 0 not null,
+order_date date default sysdate not null
+);
+--序列
+create sequence orders_seq 
+start with 1
+increment by 1
+minvalue 1
+nomaxvalue 
+nocycle
+nocache
+;
+--订单细节表
+create table ordersItem
+(
+id number primary key,
+order_id number references orders(order_id),
+book_id number references books(book_id),
+bookNum number default 0 not null
+);
+--序列
+create sequence ordersItem_seq 
+start with 1
+increment by 1
+minvalue 1
+nomaxvalue 
+nocycle
+nocache
+;
+--提交
+commit;
+
+
+

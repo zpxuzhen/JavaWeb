@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>RegExp1.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+     	<script type="text/javascript" language="javascript">
+			function test() {
+				var con=$("content").value;
+				var myReg = /(\d){4}/gi;//这是一个正则表达式，可以检索4个连续的数字
+				//var myReg=new RegExp("(\\d){4}","gi");
+				while (res = myReg.exec(con)) {
+					//res是检索处理的结果，但是一个结果就对应一个数组，该数组的第一个元素就是找到的那个文本
+					window.alert("找到" + res[0]);
+				}
+			}
+			function $(id){
+				return document.getElementById(id);
+			}
+		</script>
+	</head>
+    
+    
+	</head>	
+	
+	
+  <body>
+  <textarea rows="10" cols="10" id="content" value="" ></textarea>
+   <input type="button" value="测试" onclick="test()"/>
+  </body>
+
+</html>

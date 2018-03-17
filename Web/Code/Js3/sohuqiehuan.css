@@ -1,0 +1,53 @@
+@CHARSET "UTF-8";
+body{
+	font-size: 12px;
+}
+.div{
+	width: 126px;
+	height: 156px;
+	background-color: pink;
+}
+.navi{
+	width: 21px;
+	height: 156px;
+	float: left;
+}
+.navi ul{
+	padding: 0px;
+	margin-left: 0px;
+	margin-top: 0px;
+	float: left;
+}
+.navi li{
+	width: 21px;
+	height: 41px;
+	float:left;
+	list-style-type: none;
+	margin-top: 2px;
+	background-color: silver;
+	text-align: center;
+	padding-top: 9px;
+}
+.zs,.rz,.cg{
+	width: 101px;
+	height: 156px;
+	background-color: red;
+	float:left;
+}
+.zs ul,.rz ul,.cg ul{
+	padding: 0px;
+	margin-left: 0px;
+	margin-top: 0px;
+	float: left;
+}
+.zs li,.rz li,.cg li{
+	float:left;
+	list-style-type: none;
+	margin-top: 5px;
+	margin-left: 2px;
+	text-align: center;
+}
+.rz,.cg{
+	display: none;
+}
+

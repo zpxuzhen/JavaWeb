@@ -1,0 +1,46 @@
+@CHARSET "UTF-8";
+body{
+	margin: 0px;
+	padding: 0px;
+}
+
+/*用于控制显示的位置*/
+.div1{
+	width: 500px;
+	height: 300px;
+	border: 1px solid black;
+	margin-top: 20px;
+	margin-left: 100px;
+}
+
+/*用于控制显示图片的宽度和高度*/
+.faceul{
+	width: 176px;
+	height: 250px;
+	border: 1px solid red;
+	list-style-type: none;
+	padding: 0px;
+}
+
+/*用于控制单个图片区域的大小*/
+.faceul li{
+	width: 50px;
+	height: 70px;
+	border: 1px solid red;
+	float: left; /*左浮动*/
+	margin-top: 5px;
+	margin-left: 5px;
+}
+.faceul a{
+	font-size: 12px;
+	margin-left: 5px;
+}
+.faceul img{
+	width: 40px;
+	margin: auto;
+}
+
+a:LINK {
+	text-decoration: none;
+	color: blue;
+}

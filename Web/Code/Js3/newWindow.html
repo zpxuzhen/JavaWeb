@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>newWindow.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+	
+	<script language="javascript" type="text/javascript">
+	  function test2(){
+	  	opener.$("myspan").innerText=$("info").value;
+	  }
+	  function $(id){
+	  	return document.getElementById(id);
+	  }
+	</script>
+	
+  </head>
+  
+  <body>
+        我是新窗口
+	<input type="text" value="" id="info"/>
+	<input type="button" value="发送给父窗口" onclick="test2()"/><br/><br/>
+	<span>接收的信息是：</span>
+	<span id="myspan2">信息</span>
+
+  </body>
+</html>

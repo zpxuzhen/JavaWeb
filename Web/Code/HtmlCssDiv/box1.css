@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+body{
+	border: 1px solid red; /*这里我们给body指定了border的宽度，样式，颜色（顺序可以随意） */
+	width: 800px;
+	height: 500px;
+	margin: 0 auto;  /*0表示上下为0，左右居中*/
+}
+.s1{
+	width: 50px;
+	height: 52px;
+	border: 1px solid red;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.s1 img{
+	width: 40px;
+}

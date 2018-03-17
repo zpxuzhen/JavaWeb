@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RequestTest</servlet-name>
+    <servlet-class>com.hsp.servlet.RequestTest</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Error</servlet-name>
+    <servlet-class>com.hsp.servlet.Error</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MyServlet1</servlet-name>
+    <servlet-class>com.hsp.servlet.MyServlet1</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MyServlet2</servlet-name>
+    <servlet-class>com.hsp.servlet.MyServlet2</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MyServlet3</servlet-name>
+    <servlet-class>com.hsp.servlet.MyServlet3</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MyServlet4</servlet-name>
+    <servlet-class>com.hsp.servlet.MyServlet4</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RequestTest</servlet-name>
+    <url-pattern>/servlet/RequestTest</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Error</servlet-name>
+    <url-pattern>/servlet/Error</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MyServlet1</servlet-name>
+    <url-pattern>/servlet/MyServlet1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MyServlet2</servlet-name>
+    <url-pattern>/servlet/MyServlet2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MyServlet3</servlet-name>
+    <url-pattern>/servlet/MyServlet3</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MyServlet4</servlet-name>
+    <url-pattern>/servlet/MyServlet4</url-pattern>
+  </servlet-mapping>
+</web-app>

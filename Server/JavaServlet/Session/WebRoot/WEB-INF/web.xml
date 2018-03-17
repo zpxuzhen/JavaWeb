@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Session1</servlet-name>
+    <servlet-class>com.hsp.test1.Session1</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Session2</servlet-name>
+    <servlet-class>com.hsp.test1.Session2</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CreateCheckCode</servlet-name>
+    <servlet-class>com.hsp.myCheckCode.CreateCheckCode</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>com.hsp.myCheckCode.Login</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginCl</servlet-name>
+    <servlet-class>com.hsp.myCheckCode.LoginCl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Session3</servlet-name>
+    <servlet-class>com.hsp.test2.Session3</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Session4</servlet-name>
+    <servlet-class>com.hsp.test2.Session4</servlet-class>
+  </servlet>
+  <!-- 
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MyFilter</servlet-name>
+    <servlet-class>com.hsp.filter.MyFilter</servlet-class>
+  </servlet>
+    <filter>
+  	<filter-name>MyFilter</filter-name>
+  	<filter-class>com.hsp.filter.MyFilter</filter-class>
+  </filter>
+   -->
+  
+  
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>Session1</servlet-name>
+    <url-pattern>/servlet/Session1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Session2</servlet-name>
+    <url-pattern>/servlet/Session2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CreateCheckCode</servlet-name>
+    <url-pattern>/servlet/CreateCheckCode</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/servlet/Login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginCl</servlet-name>
+    <url-pattern>/servlet/LoginCl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Session3</servlet-name>
+    <url-pattern>/servlet/Session3</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Session4</servlet-name>
+    <url-pattern>/servlet/Session4</url-pattern>
+  </servlet-mapping>
+    <!-- 
+  <servlet-mapping>
+    <servlet-name>MyFilter</servlet-name>
+    <url-pattern>/servlet/MyFilter</url-pattern>
+  </servlet-mapping>
+  <filter-mapping>
+	<filter-name>MyFilter</filter-name>
+	<url-pattern>/*</url-pattern>  
+</filter-mapping>
+   -->
+
+</web-app>

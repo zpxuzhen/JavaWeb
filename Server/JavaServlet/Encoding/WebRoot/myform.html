@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>myform.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+  
+  <body>
+    <h1>我的表单</h1>
+    <form action="/Encoding/GetInfoServlet" method="get">
+    u:<input type="text" name="username" /><br>
+    <input type="submit" name="提交" /><br>
+    </form>
+    <a href="/Encoding/GetInfoServlet?username='你好吗?'">测试</a>
+  </body>
+</html>

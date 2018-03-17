@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>table.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+    
+    <script type="text/javascript" language="javascript">
+	    function test() {
+			//取出所有行
+			/*var myrows=myTable.rows;
+			 window.alert(myrows.length);
+			 window.alert(myrows[1].cells[0].innerText);*/
+			 //myTable.rows表示所有行
+			for ( var i = 0; i < myTable.rows.length; i++) {
+				//取出行
+				var myrows = myTable.rows[i];
+				//对行进行遍历
+				//myrows.cells该行所有的列
+			for ( var j = 0; j < myrows.cells.length; j++) {
+					window.alert(myrows.cells[j].innerText);
+				}
+			}
+		}
+		//删除一行
+		function test1(){
+			myTable.deleteRow(3);
+		}
+		//插入一行
+		function test2(){
+			var row=myTable.insertRow(3);
+			row.insertCell(0).innerText="3";
+			row.insertCell(1).innerText="吴用";
+			row.insertCell(2).innerText="智多星";
+		}
+    
+    </script>
+
+  </head>
+  
+  <body>
+  <h1>英雄排行榜</h1>
+  <table id="myTable" border="1px">
+  <tr><td>排行</td><td>姓名</td><td>外号</td></tr>
+  <tr><td>1</td><td>宋江</td><td>及时雨</td></tr>
+  <tr><td>2</td><td>卢俊义</td><td>玉麒麟</td></tr>
+  
+  </table>
+    <input type="button" value="遍历" onclick="test()">
+    <input type="button" value="删除" onclick="test1()">
+    <input type="button" value="插入" onclick="test2()"></br>
+  </body>
+</html>

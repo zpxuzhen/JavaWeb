@@ -1,0 +1,117 @@
+@CHARSET "UTF-8";
+body{
+	width: 955px;
+	/*高度定不下可以先不写*/
+	height: 355px;
+	margin:0 auto;
+	font-size: 12px;
+}
+/*top start*/
+.top{
+	width: 955px;
+	height: 30px;
+	background-color: pink;
+}
+
+/*广告部分*/
+.logo1{
+	width: 90px;
+	height: 30px;
+	background-color: blue;
+	float: left;
+}
+/*登录部分*/
+.login{
+	width: 260px;
+	height: 30px;
+	background-color: red;
+	float: left;
+}
+/*注册部分*/
+.register{
+	width: 140px;
+	height: 30px;
+	background-color: green;
+	float: left;
+}
+/*广告部分*/
+.logo2{
+	width: 100px;
+	height: 30px;
+	background-color: blue;
+	float: right;
+}
+/*top end*/
+
+/*搜狐logo 部分*/
+.sohulogo{
+	width: 140px;
+	height: 75px;
+	background-color: yellow;
+	float: left;
+	margin-top: 3px;
+}
+/*导航栏 部分*/
+.navi{
+	width: 809px;
+	height: 75px;
+	background-color: green;
+	float: left;
+	margin-top: 3px;
+	margin-left: 4px;
+}
+/*广告部分*/
+.ad{
+	width: 955px;
+	height: 244px;
+	border:1px solid black;
+	margin-top: 3px;
+	float: left;
+}
+/*学生广告*/
+.studentad{
+	width: 135px;
+	height: 230px;
+	background-color: red;
+	float: left;
+	margin-top: 3px;
+	margin-left: 3px;
+}
+/*视频广告*/
+.videoad{
+	width: 445px;
+	height: 230px;
+	background-color: green;
+	float: left;
+	margin-top: 3px;
+	margin-left: 5px;
+}
+/*房地产广告*/
+.housead{
+	width: 160px;
+	height: 230px;
+	background-color: blue;
+	float: left;
+	margin-top: 3px;
+	margin-left: 5px;
+}
+/*分割线*/
+.xian{
+	width: 1px;
+	height: 244px;
+	background-color: black;
+	float: left;
+	margin-left: 5px;
+}
+/*游戏广告*/
+.gamead{
+	width: 180px;
+	height: 230px;
+	float: left;
+	margin-top: 3px;
+	margin-left: 5px;
+}
+.gamead img{
+	width: 180px;
+}
+

@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>login.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+	
+	<script language="javascript">
+		function checkuser(){
+			if($("username").value=="顺平"&&$("pwd").value=="123"){
+				return true;
+			}
+			else{
+				$("username").value="";
+				$("pwd").value="";
+				window.alert("用户名或密码错误");
+				return false;
+			}
+		}
+		function $(id){
+			return document.getElementById(id);
+		}
+</script>
+	
+  </head>
+  
+  <body>
+  <!-- form表单提交给ok.html页面 -->
+    <form action="ok.html">
+	用户名:<input type="text" id="username" value=""></br>
+	密&nbsp;&nbsp;码:<input type="password" id="pwd" value=""></br>
+	<!-- onclick得到假值之后就放弃提交，不会跳转到另一个页面，所以此处onclick="return checkuser()" -->
+	<input type="submit" value="登陆" onclick="return checkuser()"></br>
+	</form>
+
+  </body>
+</html>
